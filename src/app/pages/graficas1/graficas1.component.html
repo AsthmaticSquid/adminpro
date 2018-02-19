@@ -1,3 +1,46 @@
-<p>
-  graficas1 works!
-</p>
+<div class="row">
+
+
+    <!-- <div class="col-6" *ngFor="let grafico of graficos; let i = index"> -->
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <!-- [aqui] -> nombre de la variable en el component.ts del hijo
+                     ="algo" -> nombre del objeto o variable del padre-->
+                <!-- <app-grafica-donut [datos]="'grafico'+i+1"></app-grafica-donut> -->
+                <app-grafica-donut [datos]="graficos.grafico1"></app-grafica-donut>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <!-- [aqui] -> nombre de la variable en el component.ts del hijo
+                         ="algo" -> nombre del objeto o variable del padre-->
+                <app-grafica-donut [datos]="graficos.grafico2"></app-grafica-donut>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <!-- [aqui] -> nombre de la variable en el component.ts del hijo
+                             ="algo" -> nombre del objeto o variable del padre-->
+                <app-grafica-donut [datos]="graficos.grafico3"></app-grafica-donut>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <!-- [aqui] -> nombre de la variable en el component.ts del hijo
+                                 ="algo" -> nombre del objeto o variable del padre-->
+                <app-grafica-donut [datos]="graficos.grafico4"></app-grafica-donut>
+            </div>
+        </div>
+    </div>
+
+</div>
