@@ -6,6 +6,7 @@ import { forEach } from '@angular/router/src/utils/collection';
   templateUrl: './grafica-donut.component.html',
   styles: []
 })
+
 export class GraficaDonutComponent implements OnInit {
 
   public doughnutChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
@@ -31,4 +32,4 @@ export class GraficaDonutComponent implements OnInit {
 
     }
   }
-}
+
